@@ -4,7 +4,6 @@
 
 class script(object):
     START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
-    
 😎<u>Movie Req... Bot</u>, your movie buddy!  
 🍿 I'm a movie/series search bot.  
 🌟 Great stories start here.  
