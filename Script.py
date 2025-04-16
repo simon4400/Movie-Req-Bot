@@ -4,12 +4,11 @@
 
 class script(object):
     START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
-    <u>😎Movie Req... Bot</u>, your movie buddy!  
-🍿 I'm a movie/series search bot.  
+<u>😎Movie Req... Bot</u>, your movie buddy!  
+🍿 I'm movie/series search bot.  
 🌟 Great stories start here.  
 😋 What can I find for you?  
-⚡ Powered by: <a href="https://t.me/MOVIE_INSIDER1">Mᴏviᴇ Insidᴇr ᴏffiᴄiᴀl</a> 🍿〽️™  
-➡️ @MOVIE_INSIDER1</b>"""
+⚡ Powered by: <a href="https://t.me/MOVIE_INSIDER1">Mᴏviᴇ Insidᴇr ᴏffiᴄiᴀl</a> 🍿〽️™ </b>"""
     
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     <u>Movie Req... Bot</u>, your movie buddy!  
