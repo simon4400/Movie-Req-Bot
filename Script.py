@@ -18,7 +18,7 @@ class script(object):
 ⚡ Powered by: <a href="https://t.me/MOVIE_INSIDER1">Mᴏviᴇ Insidᴇr ᴏffiᴄiᴀl</a> 🍿〽️™  
 ➡️ @MOVIE_INSIDER1</b>"""
     
-   # HELP_TXT = """<b>ʜᴇʟʟᴏ {}
+    HELP_TXT = """<b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b>"""
 
  ABOUT_TXT = """<b><blockquote>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
