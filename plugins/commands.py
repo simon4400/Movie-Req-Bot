@@ -1332,7 +1332,7 @@ async def remove_premium_cmd_handler(client, message):
         return
     if len(message.command) == 2:
         user_id = int(message.command[1])  # Convert the user_id to integer
-        time = message.command[2]
+       # time = message.command[2]
         time = "1s"
         seconds = await get_seconds(time)
         if seconds > 0:
