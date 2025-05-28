@@ -51,11 +51,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-               # InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+               # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+              #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+              #  InlineKeyboardButton('FONT', callback_data='font')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -65,11 +65,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-             #   InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+             #  InlineKeyboardButton('FONT', callback_data='font')
             ],[
                 InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -137,11 +137,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-             #   InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+             #  InlineKeyboardButton('FONT', callback_data='font')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -151,11 +151,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-             #   InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+             # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-             #   InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+             #  InlineKeyboardButton('FONT', callback_data='font')
             ],[
                 InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -192,11 +192,11 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                    # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                    #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+                    #  InlineKeyboardButton('FONT', callback_data='font')
                 ],[
                     InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
                 ],[
@@ -206,11 +206,11 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                    # InlineKeyboardButton('MY PLAN', callback_data="myplan"),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                    #  InlineKeyboardButton('ALIVE', callback_data='alive'),
+                    #  InlineKeyboardButton('FONT', callback_data='font')
                 ],[
                     InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
@@ -852,13 +852,13 @@ async def settings(client, message):
                 ),
             ],
             [
-                InlineKeyboardButton(
-                    'ShortLink',
-                    callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
+              #  InlineKeyboardButton(
+                  #  'ShortLink',
+                   # callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
-                InlineKeyboardButton(
-                    '✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
-                    callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
+              #  InlineKeyboardButton(
+                 #   '✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
+                   # callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{grp_id}',
                 ),
             ],
         ]
@@ -1298,7 +1298,7 @@ async def fsub(client, message):
 
 @Client.on_message(filters.command("add_premium"))
 async def give_premium_cmd_handler(client, message):
-    if PREMIUM_AND_REFERAL_MODE == False:
+    if PREMIUM_AND_REFERAL_MODE == True:
         return 
     user_id = message.from_user.id
     if user_id not in ADMINS:
@@ -1324,7 +1324,7 @@ async def give_premium_cmd_handler(client, message):
         
 @Client.on_message(filters.command("remove_premium"))
 async def remove_premium_cmd_handler(client, message):
-    if PREMIUM_AND_REFERAL_MODE == False:
+    if PREMIUM_AND_REFERAL_MODE == True:
         return 
     user_id = message.from_user.id
     if user_id not in ADMINS:
@@ -1351,7 +1351,7 @@ async def remove_premium_cmd_handler(client, message):
         
 @Client.on_message(filters.command("plan"))
 async def plans_cmd_handler(client, message): 
-    if PREMIUM_AND_REFERAL_MODE == False:
+    if PREMIUM_AND_REFERAL_MODE == True:
         return 
     btn = [            
         [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=OWNER_LNK)],
@@ -1366,7 +1366,7 @@ async def plans_cmd_handler(client, message):
         
 @Client.on_message(filters.command("myplan"))
 async def check_plans_cmd(client, message):
-    if PREMIUM_AND_REFERAL_MODE == False:
+    if PREMIUM_AND_REFERAL_MODE == True:
         return 
     user_id  = message.from_user.id
     if await db.has_premium_access(user_id):         
