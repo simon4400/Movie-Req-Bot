@@ -1,7 +1,6 @@
 import os, string, logging, random, asyncio, time, datetime, re, sys, json, base64
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from Script import SUBSCRIPTION_TXT
 from Script import script
 from database.users_chats_db import (
     db,
