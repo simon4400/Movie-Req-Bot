@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-import os
+from os import environ
 
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
-REFERAL_COUNT = os.environ.get("REFERAL_COUNT", 20)
+BOT_USERNAME = environ.get("BOT_USERNAME")
+REFERAL_COUNT = environ.get("REFERAL_COUNT", 20)
 
 @Client.on_message(filters.command("refer") & filters.private)
 async def refer_handler(client, message):
