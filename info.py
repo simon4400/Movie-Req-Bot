@@ -14,7 +14,7 @@ SESSION = environ.get('SESSION', 'MovieReqRobot')
 API_ID = int(environ.get('API_ID', ''))
 API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
-BOT_USERNAME = environ.get('BOT_USERNAME', "")
+BOT_USERNAME = environ.get('BOT_USERNAME', "MovieReqRobot")
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
 PICS = (environ.get('PICS', '')).split()
