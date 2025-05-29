@@ -1008,7 +1008,12 @@ btn = [[
             InlineKeyboardButton('Join Channel', url=link.invite_link),
             InlineKeyboardButton('View Request', url=f"{reported_post.link}")
         ]]
-        await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
+        await message.reply_text(
+            "<b>Your request has been
+            added! Please wait for some time.
+            \n\nJoin Channel First & View 
+            Request</b>",
+            reply_markup=InlineKeyboardMarkup(btn))
 
 
 # 🔁 Show Options Callback Handler
