@@ -931,8 +931,10 @@ async def save_template(client, message):
 
 
 @Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group)
+Watermark Log Channel:
+@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group)
 async def requests(bot, message):
-    if REQST_CHANNEL is None: return # Must add REQST_CHANNEL to use this feature
+    if REQST_CHANNEL is None: return
     if message.reply_to_message:
         chat_id = message.chat.id
         reporter = str(message.from_user.id)
@@ -1004,12 +1006,68 @@ async def requests(bot, message):
     
     if success:
         link = await bot.create_chat_invite_link(int(REQST_CHANNEL))
-        btn = [[
+
+btn = [[
             InlineKeyboardButton('Join Channel', url=link.invite_link),
             InlineKeyboardButton('View Request', url=f"{reported_post.link}")
         ]]
         await message.reply_text("<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>", reply_markup=InlineKeyboardMarkup(btn))
-    
+
+
+# 🔁 Show Options Callback Handler
+@Client.on_callback_query(filters.regex("show_option#"))
+async def show_options_handler(bot, query):
+    data = query.data
+    user_id = data.split("#")[1]
+
+    buttons = [
+        [
+            InlineKeyboardButton("❌ Unavailable", callback_data=f"unavailable#{user_id}"),
+            InlineKeyboardButton("✅ Uploaded", callback_data=f"uploaded#{user_id}")
+        ],
+        [
+            InlineKeyboardButton("📂 Already Available", callback_data=f"available#{user_id}")
+        ]
+    ]
+
+    await query.message.edit_reply_markup(
+        reply_markup=InlineKeyboardMarkup(buttons)
+    )
+    await query.answer("Options shown below 👇")
+
+
+# ❌ Unavailable Handler
+@Client.on_callback_query(filters.regex("unavailable#"))
+async def handle_unavailable(bot, query):
+    user_id = int(query.data.split("#")[1])
+    try:
+        await bot.send_message(user_id, "❌ Sorry, your requested content is currently unavailable.")
+        await query.answer("User notified: Unavailable")
+    except:
+        await query.answer("Couldn't notify user (maybe blocked the bot).")
+
+
+# ✅ Uploaded Handler
+@Client.on_callback_query(filters.regex("uploaded#"))
+async def handle_uploaded(bot, query):
+    user_id = int(query.data.split("#")[1])
+    try:
+        await bot.send_message(user_id, "✅ Your requested content has been uploaded!")
+        await query.answer("User notified: Uploaded")
+    except:
+        await query.answer("Couldn't notify user (maybe blocked the bot).")
+
+
+# 📂 Already Available Handler
+@Client.on_callback_query(filters.regex("available#"))
+async def handle_available(bot, query):
+    user_id = int(query.data.split("#")[1])
+    try:
+        await bot.send_message(user_id, "📂 The content you requested is already available. Please check.")
+        await query.answer("User notified: Already Available")
+    except:
+        await query.answer("Couldn't notify user (maybe blocked the bot).")
+        
 @Client.on_message(filters.command("send") & filters.user(ADMINS))
 async def send_msg(bot, message):
     if message.reply_to_message:
