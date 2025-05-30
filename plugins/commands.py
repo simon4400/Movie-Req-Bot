@@ -1076,7 +1076,7 @@ async def handle_uploaded(bot, query):
 async def handle_available(bot, query):
     user_id = int(query.data.split("#")[1])
     try:
-        await bot.send_message(user_id, "📂 The content you requested is already available. Please check.")
+        await bot.send_message(user_id, "✅ Your requested content has been uploaded! Please check.")
         
         await query.answer("User notified: Uploaded")
     except:
