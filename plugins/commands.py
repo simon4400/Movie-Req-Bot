@@ -929,7 +929,7 @@ async def save_template(client, message):
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
 
-@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group)
+@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group | filters.private)
 async def requests(bot, message):
     if REQST_CHANNEL is None: return
     if message.reply_to_message:
@@ -956,7 +956,12 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>\n\n"
+            "Enter any text. Example formats:\n"
+            "- /request [movie name]\n"
+            "- #request salaar\n"
+            "- #request Jawan\n"
+            "- /request animal")
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -991,7 +996,12 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>\n\n"
+            "Enter any text. Example formats:\n"
+            "- /request [movie name]\n"
+            "- #request salaar\n"
+            "- #request Jawan\n"
+            "- /request animal")
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -1062,8 +1072,8 @@ async def handle_uploaded(bot, query):
 async def handle_available(bot, query):
     user_id = int(query.data.split("#")[1])
     try:
-        await bot.send_message(user_id, "📂 The content you requested is already available. Please check.")
-        await query.answer("User notified: Already Available")
+        await bot.send_message(user_id, "✅ Your requested content has been uploaded!. Please check.")
+        await query.answer("User notified: Uploaded")
     except:
         await query.answer("Couldn't notify user (maybe blocked the bot).")
         
