@@ -8,7 +8,7 @@ from info import RENAME_MODE
 
 @Client.on_message(filters.private & filters.command(['view_thumb']))
 async def viewthumb(client, message):
-    if RENAME_MODE == False:
+    if RENAME_MODE == True:
         return 
     thumb = await db.get_thumbnail(message.from_user.id)
     if thumb:
@@ -18,14 +18,14 @@ async def viewthumb(client, message):
 
 @Client.on_message(filters.private & filters.command(['del_thumb']))
 async def removethumb(client, message):
-    if RENAME_MODE == False:
+    if RENAME_MODE == True:
         return 
     await db.set_thumbnail(message.from_user.id, file_id=None)
     await message.reply_text("**Thumbnail deleted successfully ✅️**")
 
 @Client.on_message(filters.private & filters.command(['set_thumb']))
 async def addthumbs(client, message):
-    if RENAME_MODE == False:
+    if RENAME_MODE == True:
         return 
     thumb = await client.ask(message.chat.id, "**Send me your thumbnail**")
     if thumb.media and thumb.media == enums.MessageMediaType.PHOTO:
