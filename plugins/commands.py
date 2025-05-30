@@ -980,7 +980,7 @@ async def requests(bot, message):
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
            else:
-                if len(content) < 3:
+               if len(content) < 3:
                     await message.reply_text(
     "<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>\n\n"
     "Enter any text. Example formats:\n"
