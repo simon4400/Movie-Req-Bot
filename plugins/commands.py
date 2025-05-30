@@ -76,11 +76,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
             ],[
              #   InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -90,11 +90,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-             #   InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             #   InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
             ],[
                 InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -162,11 +162,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -176,11 +176,11 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+               # InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
             ],[
                 InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -217,11 +217,11 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                 #   InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                #    InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+                  #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
                 ],[
                     InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
                 ],[
@@ -231,11 +231,11 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+                  #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data=""),
                     InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                  #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data=''),
+                  #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='')
                 ],[
                     InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
@@ -979,9 +979,16 @@ async def requests(bot, message):
                     ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
-            else:
+                        else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    await message.reply_text(
+    "<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>\n\n"
+    "Enter any text. Example formats:\n"
+    "- /request [movie name]\n"
+    "- #request salaar\n"
+    "- #request Jawan\n"
+    "- /request animal"
+)
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -1023,8 +1030,8 @@ async def requests(bot, message):
     "- #request salaar\n"
     "- #request Jawan\n"
     "- /request animal"
-)  
-                    if len(content) < 3:
+)
+            if len(content) < 3:
                 success = False
         except Exception as e:
             await message.reply_text(f"Error: {e}")
