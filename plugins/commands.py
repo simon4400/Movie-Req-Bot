@@ -46,6 +46,31 @@ async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
+
+      # ✅ Self-referral check
+    if len(message.command) == 2:
+        payload = message.command[1]
+
+        if payload.startswith("VJ-"):
+            try:
+                referrer_id = int(payload.split("VJ-")[1])
+            except:
+                referrer_id = None
+
+            if referrer_id == message.from_user.id:
+                refer_link = f"https://t.me/{temp.U_NAME}?start=VJ-{referrer_id}"
+                await message.reply_text(
+                    f"Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ 🤣!\n\n"
+                    f"वो लिंक किसी और को भेजे....!!\n\n"
+                    f"कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅\n\n"
+                    f"Dude! Send this invite link to your friends 👇\n\n"
+                    f"🔗 {refer_link}"
+                )
+                return
+
+            # ✅ Yaha pe aapka referral count logic aayega agar aap use karte ho:
+             await db.add_referral(referrer_id, message.from_user.id)
+    
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
