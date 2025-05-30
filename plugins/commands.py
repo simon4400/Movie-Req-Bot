@@ -1029,10 +1029,9 @@ async def show_options_handler(bot, query):
     data = query.data
     user_id = data.split("#")[1]
 
- if query.from_user.id not in
-ADMINS:
+ if query.from_user.id not in ADMINS:
         await query.answer("Only 
-admins can view these options!",
+        admins can view these options!",
 show_alert=True)
         return
      
