@@ -1829,11 +1829,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+              #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -1843,11 +1843,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+             #   InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+             #   InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -1957,7 +1957,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url="https://github.com/VJBots/VJ-FILTER-BOT")
+          #  InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url="")
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
@@ -1976,6 +1976,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "subscription":
         buttons = [[
             InlineKeyboardButton('⇚Back', callback_data='start')
+       ],[  
+            InlineKeyboardButton('👥 Invite Your Friends', url=f'https://t.me/share/url?url=https%3A//telegram.me/%7B%7D%3Fstart%3DVJ-%7B%7D%0AHello%21%0AExperience%20a%20bot%20that%20offers%20a%20vast%20library%20of%20unlimited%20movies%20and%20series.%20%F0%9F%98%83%20%0AYour%20friend%20has%20invited%20you%20to%20unlock%20unlimited%20entertainment%21%20%F0%9F%8D%BF%0AGet%20access%20to%20the%20latest%20movies%2C%20series%2C%20and%20more%20%E2%80%93')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
