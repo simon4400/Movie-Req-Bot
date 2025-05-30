@@ -929,7 +929,7 @@ async def save_template(client, message):
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
 
-@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group)
+@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group | filters.private)
 async def requests(bot, message):
     if REQST_CHANNEL is None: return
     if message.reply_to_message:
@@ -991,7 +991,14 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
+                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b> Enter Any Text Eg:- /request [movie name]
+                                             
+use any format for request,
+#request, /request 
+
+Example:- #request salaar, #request Jawan, #request animal etc.
+
+/request salaar, /request Jawan, /request animal etc. ")
             if len(content) < 3:
                 success = False
         except Exception as e:
@@ -1019,6 +1026,13 @@ async def show_options_handler(bot, query):
     data = query.data
     user_id = data.split("#")[1]
 
+    if query.from_user.id not in
+  ADMINS:
+        await query.answer("Only
+    admins can view these options!",
+    show_alert=True)
+           return
+           
     buttons = [
         [
             InlineKeyboardButton("❌ Unavailable", callback_data=f"unavailable#{user_id}"),
@@ -1063,7 +1077,8 @@ async def handle_available(bot, query):
     user_id = int(query.data.split("#")[1])
     try:
         await bot.send_message(user_id, "📂 The content you requested is already available. Please check.")
-        await query.answer("User notified: Already Available")
+        
+        await query.answer("User notified: Uploaded")
     except:
         await query.answer("Couldn't notify user (maybe blocked the bot).")
         
