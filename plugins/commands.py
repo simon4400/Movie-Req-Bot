@@ -69,7 +69,7 @@ async def start(client, message):
                 return
 
             # ✅ Yaha pe aapka referral count logic aayega agar aap use karte ho:
-             await db.add_referral(referrer_id, message.from_user.id)
+            # await db.add_referral(referrer_id, message.from_user.id)
     
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
