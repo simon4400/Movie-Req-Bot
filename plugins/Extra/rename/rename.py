@@ -9,7 +9,7 @@ import random
 
 @Client.on_message(filters.private & filters.command("rename"))
 async def rename_start(client, message):
-    if RENAME_MODE == False:
+    if RENAME_MODE == True:
         return 
     msg = await client.ask(message.chat.id, "**Now send me your file/video/audio to rename.**")
     if not msg.media:
