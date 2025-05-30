@@ -1016,15 +1016,15 @@ async def requests(bot, message):
                     success = True
             else:
                 if len(content) < 3:
-                    await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b> Enter Any Text Eg:- /request [movie name]
-                                             
-use any format for request,
-#request, /request 
-
-Example:- #request salaar, #request Jawan, #request animal etc.
-
-/request salaar, /request Jawan, /request animal etc. ")
-            if len(content) < 3:
+                    await message.reply_text(
+    "<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>\n\n"
+    "Enter any text. Example formats:\n"
+    "- /request [movie name]\n"
+    "- #request salaar\n"
+    "- #request Jawan\n"
+    "- /request animal"
+)  
+                    if len(content) < 3:
                 success = False
         except Exception as e:
             await message.reply_text(f"Error: {e}")
