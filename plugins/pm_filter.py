@@ -1974,7 +1974,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "subscription":
-    user_id = query.from_user.id
+        user_id = query.from_user.id
 
     # Step 1: Referral Link
     ref_link = f"https://telegram.me/MovieReqRobot?start=VJ-{user_id}"
