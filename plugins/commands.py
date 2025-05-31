@@ -1477,15 +1477,16 @@ async def refer_handler(client, message):
     user = message.from_user
     refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
 
-    text = f"""👥 Your Referral Link
+    text = f"""🔗 **Your Referral Link**
 
-🔗 {refer_link}
-
-📣 Share this with friends and get Premium after {REFERAL_COUNT} referrals!
+🔗 **{refer_link}**
+📋 **Tap & Hold to Copy**
+📣 Share this link with your friends & family! 
+And get **1 Month Premium** after {REFERAL_COUNT} **20 successful referrals!**
 """
 
     buttons = [[
-        InlineKeyboardButton("📋 Copy Referral Link", url=refer_link)
+        InlineKeyboardButton("👥 Invited Your Friends ", url=https://telegram.me/share/url?url=refer_link)
     ]]
 
     await message.reply(
