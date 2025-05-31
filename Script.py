@@ -19,7 +19,24 @@ class script(object):
 ➡️ @MOVIE_INSIDER1</b>"""
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
-ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs.</b>"""
+ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs. You Need Help 
+
+Bot Commands & Details
+ 
+
+<blockquote>/start - check bot is working or not 
+
+/search - Search movie/ series
+
+/myplan - Check your plan stats & Get FREE TRAIL for 5 minutes ☺️
+
+/plans - Check available plans & Premium features
+
+/refer - Refer & Get premium 
+
+/font - to get any type of font of any word
+
+More features soon...</blockquote></b>"""
 
     ABOUT_TXT = """<b><blockquote>⍟───[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     
@@ -228,7 +245,13 @@ Nᴀᴍᴇ - {}"""
 
     SHORTLINK_INFO = """
 
-🫵 Select Your Language And Earn Money 💰"""
+Comming soon... Earn Money Feature
+Note - ❌ You cannot use your own referral link!
+Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
+
+वो लिंक किसी और को भेजे....!!
+
+कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅ """
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -251,9 +274,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
-
-<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
+    CAPTION = """<b><a href="https://t.me/MOVIE_INSIDER1">{file_name}</a> 
+    
+<b>🔥 ᴊᴏɪɴ  ➥「 @MOVIE_INSIDER1 」‌‌</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
