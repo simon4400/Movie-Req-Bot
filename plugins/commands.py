@@ -1482,7 +1482,7 @@ async def refer_handler(client, message):
 🔗 **{refer_link}**
 📋 **Tap & Hold to Copy**
 📣 Share this link with your friends & family! 
-And get **1 Month Premium** after {REFERAL_COUNT} **20 successful referrals!**
+And get **1 Month Premium** after **{REFERAL_COUNT}** ** successful referrals!**
 """
 
     buttons = [[
