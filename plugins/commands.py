@@ -1477,6 +1477,7 @@ async def refer_handler(client, message):
     user = message.from_user
     refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
     share_url = f"https://telegram.me/share/url?url={refer_link}"
+    
     text = f"""🔗 **Your Referral Link**
 
 🔗 **{refer_link}**
