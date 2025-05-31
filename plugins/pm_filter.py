@@ -1989,11 +1989,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     # Step 3: Telegram Share Link
     import urllib.parse
     share_url = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(custom_text)}"
-        buttons = [[
-            InlineKeyboardButton("🔗 Share with Friends", url=share_url)
-        ],[ 
-            InlineKeyboardButton('⇚Back', callback_data='start')
-            ]]
+        
+    buttons = [
+        [InlineKeyboardButton("🔗 Share with Friends", url=share_url)],
+        [InlineKeyboardButton("⇚Back", callback_data="start")]
+    ]
+    
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
