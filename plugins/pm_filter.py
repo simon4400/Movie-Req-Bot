@@ -1974,7 +1974,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "subscription":
-       user_id = query.from_user.id
+    user_id = query.from_user.id
 
     # Step 1: Referral Link
     ref_link = f"https://telegram.me/MovieReqRobot?start=VJ-{user_id}"
@@ -1989,23 +1989,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
     # Step 3: Telegram Share Link
     import urllib.parse
     share_url = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(custom_text)}"
-        
+
+    # Step 4: Buttons (Share + Back)
     buttons = [
         [InlineKeyboardButton("🔗 Share with Friends", url=share_url)],
-        [InlineKeyboardButton("⇚Back", callback_data="start")]
+        [InlineKeyboardButton("⇚ Back", callback_data='start')]
     ]
-    
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.SUBSCRIPTION_TXT.format(REFERAL_PREMEIUM_TIME, temp.U_NAME, query.from_user.id, REFERAL_COUNT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+
+    reply_markup = InlineKeyboardMarkup(buttons)
+
+    # Step 5: Update Media and Text
+    await client.edit_message_media(
+        query.message.chat.id,
+        query.message.id,
+        InputMediaPhoto(random.choice(PICS))
+    )
+
+    await query.message.edit_text(
+        text=script.SUBSCRIPTION_TXT.format(
+            REFERAL_PREMEIUM_TIME,
+            temp.U_NAME,
+            user_id,
+            REFERAL_COUNT
+        ),
+        reply_markup=reply_markup,
+        parse_mode=enums.ParseMode.HTML
+    )
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
