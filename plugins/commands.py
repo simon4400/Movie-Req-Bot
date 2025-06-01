@@ -1019,8 +1019,7 @@ async def requests(bot, message):
             InlineKeyboardButton('View Request', url=f"{reported_post.link}")
         ]]
         await message.reply_text(
-            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First 
-            Only admin view your request</b>",
+            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First | Only admin view your request</b>",
             reply_markup=InlineKeyboardMarkup(btn)
         )
 
