@@ -20,8 +20,8 @@ class script(object):
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs. 
-
-━━━━━  ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘ  ━━━━━ 
+**You Need Help** 
+Bot Commands & Details
 
 <blockquote>/start - check bot is working or not 
 
