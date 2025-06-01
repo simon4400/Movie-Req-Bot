@@ -19,10 +19,9 @@ class script(object):
 ➡️ @MOVIE_INSIDER1</b>"""
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
-ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs. You Need Help 
+ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs. 
 
-Bot Commands & Details
- 
+━━━━━  ᴄᴏᴍᴍᴀɴᴅ ʜᴇʟᴘ  ━━━━━ 
 
 <blockquote>/start - check bot is working or not 
 
@@ -70,7 +69,8 @@ More features soon...</blockquote></b>"""
     SUBSCRIPTION_TXT = """
 <b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
 
-ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=VJ-{} (📋 **Tap & Hold to Copy**)
+ʀᴇғᴇʀᴀʟ ʟɪɴᴋ - https://telegram.me/{}?start=VJ-{} 
+(📋 Tap & Hold to Copy)
 
 ɪғ {} ᴜɴɪǫᴜᴇ ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴅᴅᴇᴅ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.
 
@@ -245,7 +245,8 @@ Nᴀᴍᴇ - {}"""
 
     SHORTLINK_INFO = """
 
-Comming soon... Earn Money Feature
+Cᴏᴍᴍɪɴɢ sᴏᴏɴ...  ━  Eᴀʀɴ 💸Mᴏɴᴇʏ Fᴇᴀᴛᴜʀᴇ  ━
+
 Note - ❌ You cannot use your own referral link!
 Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
 
