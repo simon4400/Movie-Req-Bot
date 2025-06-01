@@ -1829,7 +1829,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-              #  InlineKeyboardButton('ᴇᴀʀɴ 💸 ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
+              #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
                 InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
               #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -1974,6 +1974,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "subscription":
+            refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
+            share_url = f"https://telegram.me/share/url?url={refer_link}"
         buttons = [[
             InlineKeyboardButton('⇚Back', callback_data='start')
             ]]
