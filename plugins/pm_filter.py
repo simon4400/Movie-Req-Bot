@@ -1935,7 +1935,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
           #   InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
           #   InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
          ], [
-             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', callback_data='OWNER_LINK'),
+             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', url="https://t.me/OwnerUpdate"),
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
          ], [
            #  InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
