@@ -1490,7 +1490,7 @@ And get **1 Month Premium** after **{REFERAL_COUNT}** ** successful referrals!**
     buttons = [[
         InlineKeyboardButton("👥 Invited Your Friends ", url=share_url),
     ],[
-        InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+      #  InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
     ]]
 
     await message.reply(
