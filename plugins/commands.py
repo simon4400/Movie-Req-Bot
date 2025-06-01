@@ -1015,11 +1015,11 @@ async def requests(bot, message):
         link = await bot.create_chat_invite_link(int(REQST_CHANNEL))
 
         btn = [[
-            InlineKeyboardButton('Join Channel', url=link.invite_link),
+            InlineKeyboardButton('Join Channel', url=CHNL_LNK),
             InlineKeyboardButton('View Request', url=f"{reported_post.link}")
         ]]
         await message.reply_text(
-            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First & View Request</b>",
+            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First | Only Admin View Request</b>",
             reply_markup=InlineKeyboardMarkup(btn)
         )
 
