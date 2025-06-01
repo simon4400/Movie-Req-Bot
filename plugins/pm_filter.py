@@ -1935,7 +1935,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
           #   InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
           #   InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
          ], [
-             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', url==OWNER_LINK),
+             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', url=OWNER_LINK),
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
          ], [
            #  InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
@@ -1978,7 +1978,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             share_url = f"https://telegram.me/share/url?url={refer_link}"
         buttons = [[
             InlineKeyboardButton('⇚Back', callback_data='start')
-            ]]
+        ],[ 
+            InlineKeyboardButton("👥 Invited Your Friends ", url=share_url)    
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
