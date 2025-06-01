@@ -1974,12 +1974,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "subscription":
-            refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
-            share_url = f"https://telegram.me/share/url?url={refer_link}"
         buttons = [[
-            InlineKeyboardButton('⇚Back', callback_data='start')
-        ],[ 
-            InlineKeyboardButton("👥 Invited Your Friends ", url=share_url)    
+            InlineKeyboardButton('⇚Back', callback_data='start')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
