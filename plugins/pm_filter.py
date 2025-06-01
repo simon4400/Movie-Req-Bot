@@ -1935,7 +1935,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
           #   InlineKeyboardButton('ʏᴛ-ᴅʟ', callback_data='ytdl'), 
           #   InlineKeyboardButton('ꜱʜᴀʀᴇ ᴛᴇxᴛ', callback_data='share')
          ], [
-             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', callback_data='OWNER_LINK'),
+             InlineKeyboardButton('🃏 Aᴅᴍɪɴ', url==OWNER_LINK),
              InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
          ], [
            #  InlineKeyboardButton('ꜱᴛɪᴄᴋᴇʀ-ɪᴅ', callback_data='sticker'),
@@ -1960,7 +1960,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📢 Updates', url="https://t.me/MOVIE_INSIDER1")
         ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('❌ Close ❌', callback_data='close_data')
+           # InlineKeyboardButton('❌ Close ❌', callback_data='close_data')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
