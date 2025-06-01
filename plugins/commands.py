@@ -52,9 +52,9 @@ async def start(client, message):
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
               #  InlineKeyboardButton('ᴇᴀʀɴ ᴍᴏɴᴇʏ', callback_data="shortlink_info"),
-                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🍿', url=GRP_LNK)
+                InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-              #  InlineKeyboardButton('ʜᴇʟᴘ ❓', callback_data='help'),
+              #  InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
               #  InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
@@ -1019,7 +1019,8 @@ async def requests(bot, message):
             InlineKeyboardButton('View Request', url=f"{reported_post.link}")
         ]]
         await message.reply_text(
-            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First | Only Admin View Request</b>",
+            "<b>Your request has been added! Please wait for some time.\n\nJoin Channel First 
+            Only admin view your request</b>",
             reply_markup=InlineKeyboardMarkup(btn)
         )
 
