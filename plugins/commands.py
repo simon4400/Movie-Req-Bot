@@ -929,7 +929,7 @@ async def save_template(client, message):
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
 
-@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group & filters.private)
+@Client.on_message((filters.command(["request", "Request"]) | filters.regex("#request") | filters.regex("#Request")) & filters.group)
 async def requests(bot, message):
     if REQST_CHANNEL is None: return
     if message.reply_to_message:
@@ -1472,7 +1472,7 @@ async def purge_requests(client, message):
             disable_web_page_preview=True
         )
 
-@Client.on_message(filters.command("refer") & filters.private & filters.group)
+@Client.on_message(filters.command("refer") & filters.private)
 async def refer_handler(client, message):
     user = message.from_user
     refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
