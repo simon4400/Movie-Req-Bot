@@ -1476,21 +1476,20 @@ async def purge_requests(client, message):
 async def refer_handler(client, message):
     user = message.from_user
     refer_link = f"https://t.me/{BOT_USERNAME}?start=VJ-{user.id}"
-    share_url = f"https://telegram.me/share/url?url={refer_link}"
+    share_url = f"https://t.me/share/url?url={refer_link}%0AHello%21%20Experience%20a%20bot%20that%20offers%20a%20vast%20library%20of%20unlimited%20movies%20and%20series.%20%F0%9F%98%83%20%0AYour%20friend%20has%20invited%20you%20to%20unlock%20unlimited%20entertainment%21%20%F0%9F%8D%BF%0AGet%20access%20to%20the%20latest%20movies%2C%20series%2C%20and%20more%20%E2%80%93"
     
-    text = f"""👤 **Your Referral Link**
+    text = f"""👤 **Your Referral Link:**
+🔗 <code>{refer_link}</code>
+📋 **Tap to Copy**
 
-🔗 **{refer_link}**
-📋 **Tap & Hold to Copy**
-
-📣 Share this link with your friends & family! 
+Share this link with your friends & family! 
 And get **1 Month Premium** after **{REFERAL_COUNT}** ** successful referrals!**
 """
 
     buttons = [[
         InlineKeyboardButton("👥 Invited Your Friends ", url=share_url)
     ],[
-        InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start')
+        InlineKeyboardButton("🏠 𝙷𝙾𝙼𝙴 🏠", callback_data="start")
     ]]
 
     await message.reply(
