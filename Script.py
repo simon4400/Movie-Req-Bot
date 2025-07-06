@@ -8,7 +8,7 @@ class script(object):
 🍿 I'm movie search bot.  
 🌟 Great stories start here.  
 😋 What can I find for you?  
-⚡ Powered by: <a href="https://t.me/MOVIE_INSIDER1">Mᴏviᴇ Insidᴇr™</a></b>"""
+⚡ Powered by: <a href="https://t.me/SIMON_Bots">SIMON BOT'S™</a></b>"""
     
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     <u>Movie Req... Bot</u>, your movie buddy!  
@@ -20,7 +20,7 @@ class script(object):
     
     HELP_TXT = """<b>ʜᴇʟʟᴏ {}
 ʜᴇʀᴇ ɪs ᴀʟʟ ᴍʏ ᴜsᴇғᴜʟʟ ғᴇᴀᴛᴜʀᴇs. 
-**You Need Help** 
+ 
 Bot Commands & Details
 
 <blockquote>/start - check bot is working or not 
