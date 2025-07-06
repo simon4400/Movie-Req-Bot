@@ -55,8 +55,8 @@ async def start(client, message):
                 InlineKeyboardButton('🀄️ Info', callback_data="shortlink_info"),
                 InlineKeyboardButton('🍿 Movie Group', url=GRP_LNK)
             ],[
-              #  InlineKeyboardButton('💌 Help', callback_data='help'),
-              #  InlineKeyboardButton('🎟 About', callback_data='about')
+                InlineKeyboardButton('💌 Help', callback_data='help'),
+                InlineKeyboardButton('🎟 About', callback_data='about')
             ],[
                 InlineKeyboardButton('📌 Refer & Get Primium', callback_data='subscription')
             ],[
