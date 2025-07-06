@@ -581,9 +581,9 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("How to verify", url=VERIFY_TUTORIAL)
             ]]
-            text = "<b>ʜᴇʏ {} 👋,\n\n🔐 **Daily Verification Required!** Please verify yourself by clicking the below button to access this file.</b>"
+            text = "<b>ʜᴇʏ {} 👋,\n\n🔐 **Daily Verification Required!**\nPlease verify yourself by clicking the below button to access this file.</b>"
             if PREMIUM_AND_REFERAL_MODE == True:
-                text += "<b><blockquote>Subscribe to Premium for ad-free exprience\n\n💶 Send /plan to buy subscription<blockquote></b>"
+                text += "<b><blockquote>Subscribe to Premium for ad-free exprience\n💶 Send /plan to buy subscription<blockquote></b>"
             await message.reply_text(
                 text=text.format(message.from_user.mention),
                 protect_content=True,
