@@ -591,7 +591,7 @@ await message.reply_text(
     protect_content=True,
     reply_markup=InlineKeyboardMarkup(btn)
 )
-    return
+return
     if STREAM_MODE == True:
         button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
         reply_markup=InlineKeyboardMarkup(button)
