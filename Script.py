@@ -69,7 +69,8 @@ More features soon...</blockquote></b>"""
     SUBSCRIPTION_TXT = """
 <b>ʀᴇғᴇʀʀᴇ ʏᴏᴜʀ ʟɪɴᴋ ᴛᴏ ʏᴏᴜʀ ғʀɪᴇɴᴅs, ғᴀᴍɪʟʏ, ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ғʀᴇᴇ ᴘʀᴇᴍɪᴜᴍ ғᴏʀ {}
 
-ʀᴇғᴇʀᴀʟ ʟɪɴᴋ -🔗<code>https://telegram.me/{}?start=VJ-{}</code> 
+ʀᴇғᴇʀᴀʟ ʟɪɴᴋ -
+🔗<code>https://telegram.me/{}?start=VJ-{}</code> 
 📋 Tap to Copy
 
 ɪғ {} ᴜɴɪǫᴜᴇ ᴜsᴇʀ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜ ʏᴏᴜʀ ʀᴇғᴇʀᴀʟ ʟɪɴᴋ ᴛʜᴇɴ ʏᴏᴜ ᴡɪʟʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴀᴅᴅᴇᴅ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪsᴛ.
@@ -243,16 +244,15 @@ Nᴀᴍᴇ - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
-    SHORTLINK_INFO = """
+    SHORTLINK_INFO = """<b>ʜᴇʟʟᴏ {}
+       ℹ️ **Information Tab**  
 
-Cᴏᴍᴍɪɴɢ sᴏᴏɴ...  Eᴀʀɴ 💸Mᴏɴᴇʏ Fᴇᴀᴛᴜʀᴇ
-
-Note - ❌ You cannot use your own referral link!
+<blockquote>1). Note - ❌ You cannot use your own referral link!
 Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
 
 वो लिंक किसी और को भेजे....!!
 
-कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅ """
+कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅</blockquote></b>"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -275,9 +275,9 @@ Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b><a href="https://t.me/MOVIE_INSIDER1">**{file_name}**</a> 
+    CAPTION = """<b><a href="https://t.me/SIMON_Bots">**{file_name}**</a> 
     
-<b>🔥 ᴊᴏɪɴ  ➥「 @MOVIE_INSIDER1 」‌‌</b>""" 
+<b>🔥 ᴊᴏɪɴ  ➥「 @SIMON_BOTS 」‌‌</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
