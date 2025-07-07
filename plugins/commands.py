@@ -581,14 +581,16 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("How to verify", url=VERIFY_TUTORIAL)
             ]]
-            text = "<b>🔐 *Daily Verification Required!*\nPlease verify yourself by clicking the below button to access this file.</b>"
-            if PREMIUM_AND_REFERAL_MODE == True:
-                        text += "<b>\n\n> Subscribe to /premium for ad-free experience</b>"
-                    await message.reply_text(
-                        text=text.format(message.from_user.mention),
-                        protect_content=True,
-                        reply_markup=InlineKeyboardMarkup(btn)
-                    )
+            text = "<b>🔐 Daily Verification Required!\nPlease verify yourself by clicking the below button to access this file.</b>"
+
+if PREMIUM_AND_REFERAL_MODE == True:
+    text += "<b>\n\n> Subscribe to /premium for ad-free experience</b>"
+
+await message.reply_text(
+    text=text.format(message.from_user.mention),
+    protect_content=True,
+    reply_markup=InlineKeyboardMarkup(btn)
+)
             return
     if STREAM_MODE == True:
         button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
