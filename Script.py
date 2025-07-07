@@ -244,8 +244,8 @@ Nᴀᴍᴇ - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
-    SHORTLINK_INFO = """<b>ʜᴇʟʟᴏ {}
-       ℹ️ **Information Tab**  
+    SHORTLINK_INFO = """<b>
+          Information Tab  
 
 <blockquote>1). Note - ❌ You cannot use your own referral link!
 Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
