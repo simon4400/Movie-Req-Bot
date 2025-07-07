@@ -244,13 +244,13 @@ Nᴀᴍᴇ - {}"""
 
     MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>"""
 
-    SHORTLINK_INFO = """<b>📢Information Tab  
+    SHORTLINK_INFO = """<b>📢 Information Tab</b>  
 <blockquote>1). Note - ❌ You cannot use your own referral link!
 Yᴏᴜ Cᴀɴ'ᴛ Rᴇғᴇʀ Yᴏᴜʀsᴇʟғ !
 
-वो लिंक किसी और को भेजे....!!
+अपनी referral लिंक किसी और को भेजे....!!
 
-कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅</blockquote></b>"""
+कोई भी 20 लोग आपके लिंक पे क्लिक करेंगे तो आपको 1 month फ्री प्रीमियम मिलेगा...✅</blockquote>"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
