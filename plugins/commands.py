@@ -58,7 +58,7 @@ async def start(client, message):
                 InlineKeyboardButton('💌 Help', callback_data='help'),
                 InlineKeyboardButton('🎟 About', callback_data='about')
             ],[
-                InlineKeyboardButton('📌 Refer & Get Primium', callback_data='subscription')
+                InlineKeyboardButton('📌 Refer & Get Premium', callback_data='subscription')
             ],[
               #  InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -145,7 +145,7 @@ async def start(client, message):
                 InlineKeyboardButton('💌 Help', callback_data='help'),
                 InlineKeyboardButton('🎟 About', callback_data='about')
             ],[
-                InlineKeyboardButton('📌 Refer & Get Primium', callback_data='subscription')
+                InlineKeyboardButton('📌 Refer & Get Premium', callback_data='subscription')
             ],[
               #  InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
             ]]
@@ -201,7 +201,7 @@ async def start(client, message):
                 InlineKeyboardButton('💌 Help', callback_data='help'),
                 InlineKeyboardButton('🎟 About', callback_data='about')
             ],[
-                InlineKeyboardButton('📌 Refer & Get Primium', callback_data='subscription')
+                InlineKeyboardButton('📌 Refer & Get Premium', callback_data='subscription')
             ],[
               #  InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
@@ -216,7 +216,7 @@ async def start(client, message):
                 InlineKeyboardButton('💌 Help', callback_data='help'),
                 InlineKeyboardButton('🎟 About', callback_data='about')
             ],[
-                InlineKeyboardButton('📌 Refer & Get Primium', callback_data='subscription')
+                InlineKeyboardButton('📌 Refer & Get Premium', callback_data='subscription')
             ],[
               #  InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
@@ -519,9 +519,9 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("ᴠᴇʀɪғʏ", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("✅ Verify Now", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("How to verify", url=VERIFY_TUTORIAL)
                     ]]
                     text = "<b>ʜᴇʏ {} 👋,\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ᴛᴏᴅᴀʏ</b>"
                     if PREMIUM_AND_REFERAL_MODE == True:
@@ -581,14 +581,14 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton("How to verify", url=VERIFY_TUTORIAL)
             ]]
-            text = "<b>ʜᴇʏ {} 👋,\n\n🔐 **Daily Verification Required!**\nPlease verify yourself by clicking the below button to access this file.</b>"
-            if PREMIUM_AND_REFERAL_MODE == True:
-                text += "<b><blockquote>Subscribe to Premium for ad-free exprience\n💶 Send /plan to buy subscription<blockquote></b>"
-            await message.reply_text(
-                text=text.format(message.from_user.mention),
-                protect_content=True,
-                reply_markup=InlineKeyboardMarkup(btn)
-            )
+            text = "<b>ʜᴇʏ {} 👋,\n\nʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ & ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ᴛᴏᴅᴀʏ</b>"
+                    if PREMIUM_AND_REFERAL_MODE == True:
+                        text += "<b>ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴅɪʀᴇᴄᴛ ғɪʟᴇꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴꜱ ᴛʜᴇɴ ʙᴜʏ ʙᴏᴛ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ☺️\n\n💶 ꜱᴇɴᴅ /plan ᴛᴏ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ</b>"
+                    await message.reply_text(
+                        text=text.format(message.from_user.mention),
+                        protect_content=True,
+                        reply_markup=InlineKeyboardMarkup(btn)
+                    )
             return
     if STREAM_MODE == True:
         button = [[InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')]]
