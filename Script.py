@@ -12,7 +12,7 @@ class script(object):
     
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     <u>Movie Req... Bot</u>, your movie buddy!  
-🍿 I'm a movie/series search bot.  
+🍿 I'm a movie/series search bot..  
 🌟 Great stories start here.  
 😋 What can I find for you?  
 ⚡ Powered by: <a href="https://t.me/MOVIE_INSIDER1">Mᴏviᴇ Insidᴇr ᴏffiᴄiᴀl</a> 🍿〽️™  
@@ -781,3 +781,4 @@ Example:- /set_caption 📕 File Name: {filename}
 
 
     
+
